@@ -15,7 +15,7 @@ The preprocessing of the data for almost all the models is very similar. The onl
 - The initial model uses 2 hidden layers. 
 - Loss: 0.5651512742042542, Accuracy: 0.7297959327697754
 
-### Frist Optimization
+### First Optimization
 
 - Dropped two more columns: "SPECIAL_CONSIDERATIONS" and "STATUS".
 - Adjusted the cutoffs for both "APPLICATION_TYPE" and "CLASSIFICATION".
@@ -39,7 +39,8 @@ The preprocessing of the data for almost all the models is very similar. The onl
 - Run time was very long so early stopping was used as a callback to move on if there were no improvements.
 - Keras tuner best hyperparameters are:
 
-""" {'activation': 'sigmoid',
+```
+{'activation': 'sigmoid',
  'first_units': 36,
  'num_layers': 3,
  'units_1': 16,
@@ -47,7 +48,8 @@ The preprocessing of the data for almost all the models is very similar. The onl
  'tuner/initial_epoch': 34,
  'tuner/bracket': 4,
  'tuner/round': 4,
- 'tuner/trial_id': '0145'} """
+ 'tuner/trial_id': '0145'}
+``` 
 
 - Loss decreased and accuracy increased. 
 - Loss: 0.5561479330062866, Accuracy: 0.7337609529495239
